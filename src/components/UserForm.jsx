@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addUser, editUser } from '../redux/actions/UserActions';
 import PropTypes from 'prop-types';
 
 const UserForm = ({ userToEdit }) => {
-  const { users } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const { Group, Label, Control } = Form;
   const [formData, setFormData] = useState({
