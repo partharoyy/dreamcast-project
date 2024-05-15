@@ -8,3 +8,5 @@ npm install
 npm run dev
 
 or go to the deployed link => https://dreamcast-project.vercel.app/
+
+Note - Going from Add mode to Edit mode is the normal flow, once in edit mode we need to reload the app to go back to Add mode !!

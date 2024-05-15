@@ -36,10 +36,18 @@ const UserForm = ({ userToEdit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (
+      formData.name === '' ||
+      formData.email === '' ||
+      formData.phone === '' ||
+      formData.address.city === '' ||
+      formData.address.zipcode === ''
+    )
+      return alert('Field/Fields cannot be empty');
     if (userToEdit) {
       dispatch(editUser({ id: userToEdit.id, ...formData }));
     } else {
-      dispatch(addUser({ id: users.length + 1, ...formData }));
+      dispatch(addUser({ id: Date.now(), ...formData }));
     }
     setFormData({
       name: '',
