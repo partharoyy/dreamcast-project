@@ -1,8 +1,10 @@
-# React + Vite
+Dreamcast Project for practical evaluation!
+I have used legacy Redux instead of Redux-toolkit as it was not specifically mentioned, as recommended by Redux officially we should use Redux-toolkit!
+I have added both the functionality Add, Edit, and Delete though it was optional!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Start project locally:
+Clone the repo
+npm install
+npm run dev
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+or go to the deployed link => https://dreamcast-project.vercel.app/
